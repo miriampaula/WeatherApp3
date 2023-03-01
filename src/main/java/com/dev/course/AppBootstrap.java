@@ -4,7 +4,7 @@ package com.dev.course;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.dev.course.route.ApiRoute;
+import com.dev.course.route.PersonRoute;
 import com.dev.course.spark.SparkContext;
 import com.dev.course.spark.SparkContextConfig;
 
@@ -19,7 +19,7 @@ public class AppBootstrap {
         final SparkContext context = createSparkContext();
 
         // Comment out any of this entries to disable the respective routes.
-        context.addRouteBuilder(new ApiRoute());
+        context.addRouteBuilder(new PersonRoute());
     }
 
     private static SparkContext createSparkContext() {

@@ -16,7 +16,7 @@ import com.dev.course.spark.SparkContext;
 
 import io.restassured.RestAssured;
 
-class ApiRouteShould {
+class PersonRouteTest {
 
     private static final int port = 7999;
     private static final String basePath = "/test";
@@ -36,7 +36,7 @@ class ApiRouteShould {
 
         context = new SparkContext(port, basePath);
         context.defaultContentType("application/json");
-        context.addRouteBuilder(new ApiRoute());
+        context.addRouteBuilder(new PersonRoute());
     }
 
     @AfterEach
