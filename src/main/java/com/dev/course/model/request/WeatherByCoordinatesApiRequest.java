@@ -1,6 +1,7 @@
 package main.java.com.dev.course.model.request;
 
-public class WeatherByCoordinatesApiRequest implements ApiRequest{
+
+public class WeatherByCoordinatesApiRequest implements ApiRequest {
     private String latitude;
     private String longitude;
 

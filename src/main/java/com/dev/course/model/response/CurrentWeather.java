@@ -1,30 +1,22 @@
 package main.java.com.dev.course.model.response;
 
+import java.math.BigDecimal;
+
 public class CurrentWeather {
-    private String temperature;
-    private String location;
+    private int temperature;
     private String humidity;
 
-    public CurrentWeather(String temperature, String location, String humidity) {
+    public CurrentWeather(int temperature, String humidity) {
         this.temperature = temperature;
-        this.location = location;
         this.humidity = humidity;
     }
 
-    public String getTemperature() {
+    public int getTemperature() {
         return temperature;
     }
 
-    public void setTemperature(String temperature) {
+    public void setTemperature(int temperature) {
         this.temperature = temperature;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
     }
 
     public String getHumidity() {

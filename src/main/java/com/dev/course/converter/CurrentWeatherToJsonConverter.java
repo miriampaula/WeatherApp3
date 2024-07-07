@@ -6,9 +6,10 @@ public class CurrentWeatherToJsonConverter {
     public String convertCurrentWeatherToJson(CurrentWeather currentWeather){
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("{\n");
-        stringBuilder.append("\"temperature\": \"");
-        stringBuilder.append(currentWeather.getTemperature());
-        stringBuilder.append("\"\n}");
+        stringBuilder.append("\"temperature\":")
+                .append("\"")
+                .append(currentWeather.getTemperature())
+                .append("\"\n}");
         return stringBuilder.toString();
     }
 
